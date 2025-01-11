@@ -39,8 +39,9 @@ const FinancialTable = () => {
 
   const fetchFinancialData = async () => {
     // currently using free api key, noted if the key expired, then there will be error
-    const response = await fetch("https://financialmodelingprep.com/api/v3/income-statement/AAPL?period=annual&apikey=TPhbYvK882jxCSyYhuHg8bKMVjQa9FyH");
-    const result = await response.json();
+    yourApiKey= ""; 
+    const response = await fetch("https://financialmodelingprep.com/api/v3/income-statement/AAPL?period=annual&apikey="+yourApiKey);
+    const result = await response.json();    const result = await response.json();
     setData(result);
   };
 
