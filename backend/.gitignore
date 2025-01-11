@@ -1,0 +1,2 @@
+# .env file (sensitive data)
+*.env
